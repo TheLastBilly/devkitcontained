@@ -1,8 +1,10 @@
-FROM devkitpro/toolchain-base
+FROM thelastbilly/toolchain-base
 
-MAINTAINER Dave Murphy <davem@devkitpro.org>
+LABEL maintainer="Jose Ricardo jtmonegro@gmail.com"
 
 RUN dkp-pacman -Syyu --noconfirm 3ds-dev nds-dev gp32-dev gba-dev nds-portlibs && \
     dkp-pacman -S --needed --noconfirm `dkp-pacman -Slq dkp-libs | grep '^3ds-'` && \
     dkp-pacman -Scc --noconfirm
 ENV DEVKITARM=${DEVKITPRO}/devkitARM
+
+RUN mkdir /mnt/share

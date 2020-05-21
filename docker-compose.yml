@@ -1,0 +1,10 @@
+version: '3.0'
+
+services:
+    toolchain-base:
+        build: toolchain-base/
+        image: thelastbilly/toolchain-base
+    
+    devkitarm:
+        build: devkitarm/
+        image: thelastbilly/devkitarm
