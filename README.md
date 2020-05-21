@@ -1,3 +1,1 @@
-## devkitPro Dockerfiles
-
-source Dockerfiles for docker images at https://hub.docker.com/u/devkitpro/
+## A fork of devkitpro's [docker](https://github.com/devkitPro/docker) 
