@@ -16,5 +16,3 @@ RUN wget https://github.com/devkitPro/pacman/releases/latest/download/devkitpro-
 
 ENV DEVKITPRO=/opt/devkitpro
 ENV PATH=${DEVKITPRO}/tools/bin:$PATH
-
-RUN chsh -s /usr/bin/fish
